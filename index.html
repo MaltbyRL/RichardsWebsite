@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Richard Maltby</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+
+
+  </head>
+  <body ng-app='mySite'>
+    <div class="background"></div>
+    <div id="backgroundOverlay" class="overlay">
+      <nav id="test" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a ui-sref="home">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right topBarIcons">
+              <li><a target="_blank" href="https://angel.co/richard-maltby"><img class="linkIcon" src="images/AngelListIcon.png" alt="Angel List" /></a></li>
+              <li><a target="_blank" href="https://github.com/MaltbyRL"><img class="linkIcon" src="images/GithubIcon.png" alt="Github" /></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/richard-maltby-4b537831"><img class="linkIcon" src="images/LinkedInIcon.png" alt="Linked in" /></a></li>
+              <li><a target="_blank" href="http://stackoverflow.com/users/5724407/richard-maltby"><img class="linkIcon" src="images/StackOverflowIcon.png" alt="Stack overflow" /></a></li>
+              <li><a target="_blank" href="https://twitter.com/Richard__Maltby"><img class="linkIcon" src="images/TwitterIcon.png" alt="Twitter" /></a></li>
+              <li><a target="_blank" ui-sref="aboutMe">About Me</a></li>
+              <li><a target="_blank" ui-sref="portfolio">Portfolio</a></li>
+              <li><a target="_blank" ui-sref="blog">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="bodyCont" class="container">
+        <ui-view></ui-view>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+
+  </body>
+</html>
