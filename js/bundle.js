@@ -6,22 +6,22 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'partials/splash.html',
+      templateUrl: '../partials/splash.html',
       controller: 'homeCtrl'
     })
     .state('aboutMe', {
       url: '/aboutMe',
-      templateUrl: 'partials/about.html',
+      templateUrl: '../partials/about.html',
       controller: 'aboutCtrl'
     })
     .state('blog', {
       url: '/blog',
-      templateUrl: 'partials/blog.html',
+      templateUrl: '../partials/blog.html',
       controller: 'blogCtrl'
     })
     .state('portfolio', {
       url: '/portfolio',
-      templateUrl: 'partials/portfolio.html',
+      templateUrl: '../partials/portfolio.html',
       controller: 'portfolioCtrl'
     })
 
@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 var app = angular.module('mySite');
 
 app.controller('aboutCtrl', function() {
-
+  
   $("#backgroundOverlay").addClass('overlay')
 });
 
@@ -43,7 +43,7 @@ app.controller('aboutCtrl', function() {
 var app = angular.module('mySite');
 
 app.controller('blogCtrl', function() {
-
+  
   $("#backgroundOverlay").addClass('overlay')
 });
 
