@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 var app = angular.module('mySite');
 
 app.controller('aboutCtrl', function() {
-  
+
   $("#backgroundOverlay").addClass('overlay')
 });
 
@@ -43,7 +43,7 @@ app.controller('aboutCtrl', function() {
 var app = angular.module('mySite');
 
 app.controller('blogCtrl', function() {
-  
+
   $("#backgroundOverlay").addClass('overlay')
 });
 
