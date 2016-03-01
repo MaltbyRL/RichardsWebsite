@@ -4,6 +4,11 @@ var app = angular.module('mySite', ['ngRoute', 'ui.router']);
 console.log("app:", app)
 app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'partials/splash.html',
+      controller: 'homeCtrl'
+    })
     .state('aboutMe', {
       url: '/aboutMe',
       templateUrl: 'partials/about.html',
@@ -19,11 +24,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'partials/portfolio.html',
       controller: 'portfolioCtrl'
     })
-    .state('home', {
-      url: '/',
-      templateUrl: 'partials/splash.html',
-      controller: 'homeCtrl'
-    })
 
 
   $urlRouterProvider.otherwise('/');
@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 var app = angular.module('mySite');
 
 app.controller('aboutCtrl', function() {
-
+  
   $("#backgroundOverlay").addClass('overlay')
 });
 
@@ -43,7 +43,7 @@ app.controller('aboutCtrl', function() {
 var app = angular.module('mySite');
 
 app.controller('blogCtrl', function() {
-
+  
   $("#backgroundOverlay").addClass('overlay')
 });
 
