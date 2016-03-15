@@ -28,6 +28,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 });
+app.run(function($window, $rootScope, $location) {
+  $window.ga('create', 'UA-75162145-1', 'auto');
+  $rootScope.$on('$stateChangeSuccess', function (event) {
+    $window.ga('send', 'pageview', $location.path());
+});
+});
 
 'use strict';
 
